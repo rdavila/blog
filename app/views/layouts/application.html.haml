@@ -2,6 +2,7 @@
 %html{ "xml:lang" => "es", :lang => "es", :xmlns => "http://www.w3.org/1999/xhtml" }
 
 %head
+  = stylesheet_link_tag 'style'
   %title Rubén On Rails
 
 %body
@@ -38,7 +39,7 @@
             %li= link_to 'Title of older post 5'
             %li= link_to 'Title of older post 6'
     #footer
-      #delicious
+      .footer-block
         %h3 My delicious
         %ul
           %li= link_to 'Link 1'
@@ -46,7 +47,7 @@
           %li= link_to 'Link 3'
           %li= link_to 'Link 4'
           %li= link_to 'Link 5'
-      #twitter
+      .footer-block
         %h3 My Twitter
         %ul
           %li= link_to 'Link to status 1'
@@ -54,7 +55,7 @@
           %li= link_to 'Link to status 3'
           %li= link_to 'Link to status 4'
           %li= link_to 'Link to status 5'
-      #github
+      .footer-block
         %h3 My Github
         %ul
           %li= link_to 'Link to github project 1'
