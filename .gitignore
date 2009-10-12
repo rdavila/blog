@@ -7,3 +7,4 @@ db/schema.rb
 db/schema.sql
 *.tmp
 .sass-cache/*
+public/stylesheets/sass/.sass-cache/*
