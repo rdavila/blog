@@ -27,3 +27,5 @@ p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset { margi
 
 #menu ul li a { text-decoration: none; color: black; font-size: 1.5em; }
 #menu ul li a:hover { color: #f0c; }
+
+h1 a { font-family: Verdana; font-size: 2em; color: #9d2b30; }
