@@ -5,6 +5,7 @@
   Licensed under GPL and MIT.
 
 @import compass/utilities/general/reset.sass
+@import compass/utilities/lists/bullets.sass
 @import 960/grid.sass
 
 +global-reset
@@ -57,4 +58,10 @@
 #github
   +grid(3)
   +omega
-  
+#menu
+  ul
+    +no-bullets 
+#menu
+  ul
+    li
+      :border-bottom 2px dashed black

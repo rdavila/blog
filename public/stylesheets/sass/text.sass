@@ -6,5 +6,16 @@
   
 
 @import 960/text.sass
+@import compass/utilities/links.sass
 
 +text
+
+#menu
+  ul
+    li
+      a
+        :text-decoration none
+        +link-colors(#000) 
+        &:hover
+          :color #f0c
+        :font-size 1.5em
