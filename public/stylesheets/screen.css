@@ -18,8 +18,3 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; }
 img a { border: none; }
 
 /* The *:focus rule is reset and suppresses link outlining. You _must_ remember to redefine your own outline, as it’s an important accessibility aid. E.g. *:focus   outline: #ccc dotted medium */
-#menu { float: left; width: 10em; }
-
-#content { margin-left: 11em; }
-
-.footer-block { float: left; width: 15em; }

@@ -2,8 +2,8 @@
 %html{ "xml:lang" => "es", :lang => "es", :xmlns => "http://www.w3.org/1999/xhtml" }
 
 %head
-  = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
-  = stylesheet_link_tag 'print.css', :media => 'print'
+  = stylesheet_link_tag 'grid.css', :media => 'screen, projection'
+  = stylesheet_link_tag 'text.css', :media => 'screen, projection'
   /[if IE]
     = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
   %title Rubén On Rails
@@ -42,7 +42,7 @@
             %li= link_to 'Title of older post 5'
             %li= link_to 'Title of older post 6'
     #footer
-      .footer-block
+      #delicious
         %h3 My delicious
         %ul
           %li= link_to 'Link 1'
@@ -50,7 +50,7 @@
           %li= link_to 'Link 3'
           %li= link_to 'Link 4'
           %li= link_to 'Link 5'
-      .footer-block
+      #twitter
         %h3 My Twitter
         %ul
           %li= link_to 'Link to status 1'
@@ -58,7 +58,7 @@
           %li= link_to 'Link to status 3'
           %li= link_to 'Link to status 4'
           %li= link_to 'Link to status 5'
-      .footer-block
+      #github
         %h3 My Github
         %ul
           %li= link_to 'Link to github project 1'
