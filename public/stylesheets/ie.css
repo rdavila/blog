@@ -1,1 +1,53 @@
-/* Welcome to Compass. Use this file to write IE specific override styles. Import this file using the following HTML or equivalent: <!--[if IE]>   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /> <![endif]--> */
+/* Welcome to Susy. Use this file to write IE specific override styles. Import this file using the following HTML or equivalent: <!--[if IE]>   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /> <![endif]--> */
+/* @group defaults */
+/* @group links */
+
+
+/* @end */
+/* @group headers */
+
+/* @end */
+/* @group forms */
+
+
+
+
+
+
+
+/* @end */
+/* @group tables */
+/* tables still need 'cellspacing="0"' in the markup */
+
+
+
+
+
+
+
+/* @end */
+/* @group block tags */
+
+ol { list-style: decimal; margin: 0 1.5em 1.5em 1.5em; }
+
+ul { list-style: disc; margin: 0 1.5em 1.5em 1.5em; }
+
+
+/* @end */
+/* @group inline tags */
+
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+ins { text-decoration: underline; }
+
+del { text-decoration: line-through; }
+
+
+/* @end */
+/* @group replaced tags */
+
+/* @end */
+
+/* @end */

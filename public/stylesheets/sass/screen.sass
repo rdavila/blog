@@ -1,14 +1,76 @@
 /*
-  Welcome to Compass.
-  In this file you should write your main styles. (or centralize your imports)
+  Welcome to Susy. Use this file to define screen styles.
   Import this file using the following HTML or equivalent:
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
 
+/* @group reset */
 @import compass/reset.sass
-@import 960/grid.sass
+/* @end */
 
+/* @group defaults */
+@import base.sass
+/* @end */
+
+
+/* @group STRUCTURE */
+
+
+
+/* @end */
+
+  
+/* @group COMPONENTS by type */
+
+
+
+/* @end */
+
+
+/* @group OVERRIDES by content */
+
+
+
+/* @end */
+
+        
+/* @group OVERRIDES by page */
+
+
+
+/* @end */
+
+
+/* @group DEBUG */
+
+/*   uncomment, adjust and use for debugging    */
+  
 /*
-  The *:focus rule is reset and suppresses link outlining.
-  You _must_ remember to redefine your own outline, as it’s an important accessibility aid. E.g.
-  *:focus
-    outline: #ccc dotted medium
+  #page
+    +show-grid("grid.png")
+
+/* @end */
+
+body
+  +susy
+#container
+  +container
+  +show-grid("grid.png")
+#header
+  +full
+#menu
+  +columns(2)
+  +alpha
+#content
+  +columns(8)
+  +omega
+#footer
+  +full
+  +prefix(2)
+#delicious
+  +columns(2)
+  +alpha
+#twitter
+  +columns(2)
+#github
+  +columns(3)
+  +omega
