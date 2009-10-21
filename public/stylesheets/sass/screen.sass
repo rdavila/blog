@@ -47,8 +47,9 @@
 /*
   #page
     +show-grid("grid.png")
-
 /* @end */
+
+@import compass/utilities/lists.sass
 
 body
   +susy
@@ -65,12 +66,28 @@ body
     :text-decoration none
     :font-family georgia, serif
     :font-weight bold
+#main
+  :padding-top 2em
 #menu
   +columns(2)
-  +alpha
+  +omega
+  ul
+    +no-bullets
+    :margin-top -1em
+    li
+      :border-bottom 0.1em solid black
+      :padding-top 1em
+  a
+    :font-size 1.5em
+    :text-decoration none
+    +link-colors(#000)
+    :font-family arial, serif
+    &:hover
+      :color #fff
+      :background-color #000
 #content
   +columns(8)
-  +omega
+  +alpha
 #footer
   +full
   +prefix(2)

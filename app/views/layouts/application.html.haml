@@ -13,13 +13,6 @@
     #header
       %h1= link_to "Blog.create(:name => 'Rubén On Rails')", root_url 
     #main
-      #menu
-        %ul
-          %li= link_to 'Inicio'
-          %li= link_to 'Acerca de'
-          %li= link_to 'Portafolio'
-          %li= link_to 'Contacto'
-          %li= link_to 'Archivo'
       #content
         .post
           %h2.title Modificando archivo existente con Rails
@@ -41,6 +34,13 @@
             %li= link_to 'Title of older post 4'
             %li= link_to 'Title of older post 5'
             %li= link_to 'Title of older post 6'
+      #menu
+        %ul
+          %li= link_to 'Inicio'
+          %li= link_to 'Acerca de'
+          %li= link_to 'Portafolio'
+          %li= link_to 'Contacto'
+          %li= link_to 'Archivo'
     #footer
       #delicious
         %h3 My delicious
