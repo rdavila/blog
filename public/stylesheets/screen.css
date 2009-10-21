@@ -85,12 +85,13 @@ del { text-decoration: line-through; }
 /* @end */
 body { text-align: center; font-size: 87.5%; line-height: 150%; }
 
-#container { overflow: hidden; display: inline-block; text-align: left; margin-left: auto; margin-right: auto; width: 70em; max-width: 100%; background-image: url('/images/grid.png?1255733617'); background-repeat: repeat; background-position: 1.429% 0; }
+#container { overflow: hidden; display: inline-block; text-align: left; margin-left: auto; margin-right: auto; width: 70em; max-width: 100%; background-image: url('/images/grid.png?1255734687'); background-repeat: repeat; background-position: 1.429% 0; }
 #container { display: block; }
 #container * { background: transparent; }
 #container div { background: rgba(0,0,0,.125); }
 
-#header { clear: both; margin-right: 1.429%; margin-left: 1.429%; }
+#header { clear: both; margin-right: 1.429%; margin-left: 1.429%; padding: 2em 0; background: transparent url(/images/header_shadow.gif) repeat-x scroll left bottom; }
+#header a { font-size: 3.2em; color: #872633; text-decoration: none; font-family: georgia, serif; font-weight: bold; }
 
 #menu { width: 17.143%; display: inline; float: left; margin-right: 2.857%; margin-left: 1.429%; }
 
