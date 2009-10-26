@@ -5,6 +5,15 @@
 
 /* @end */
 /* @group headers */
+h1, h2, h3, h4, h5, h6 { font-family: Georgia,serif; }
+
+h2.title { font-size: 2.5em; padding-bottom: 1em; }
+h2.title a { color: #333; }
+h2.title a:hover { background-color: #cf9; }
+
+h3 { font-size: 2em; padding: 0.5em 0; }
+
+h4 { font-size: 1.5em; padding: 0.5em 0; }
 
 /* @end */
 /* @group forms */
@@ -27,6 +36,7 @@
 
 /* @end */
 /* @group block tags */
+p { padding-bottom: 0.5em; }
 
 ol { list-style: decimal; margin: 0 1.5em 1.5em 1.5em; }
 

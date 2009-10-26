@@ -15,7 +15,7 @@
     #main
       #content
         .post
-          %h2.title Modificando archivo existente con Rails
+          %h2.title= link_to 'Modificando archivo existente con Rails', '#'
           %p
             Rails tiene muy buenas utilidades que usa internamente, pero que muchas veces no sabemos como sacarle provecho para nuestros proyectos.
           %p
@@ -24,6 +24,9 @@
           %p
             Asi que decidi echarle un ojo al codigo de estos generadores y observe que define un metodo llamado gsub_file el cual se encuentra accesible y documentado para nuestro uso.
 
+          %p
+            Lo que yo necesitaba era modificar el archivo test/test_helper.rb como parte del trabajo de un template que estaba creando, el archivo inicialmente se encuentra asi:
+          %h3 Yet another header of content
           %p
             Lo que yo necesitaba era modificar el archivo test/test_helper.rb como parte del trabajo de un template que estaba creando, el archivo inicialmente se encuentra asi:
         #older-posts
