@@ -119,3 +119,9 @@ body { text-align: center; font-size: 87.5%; line-height: 150%; font-family: "lu
 #twitter { width: 17.143%; display: inline; float: left; margin-right: 2.857%; }
 
 #github { width: 27.143%; display: inline; float: left; margin-right: 2.857%; margin-right: 1.429%; /* ugly hacks for IE6-7 */ #margin-right: 0.429%; /* end ugly hacks */ }
+
+.date { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; border: 1px solid black; }
+.date .day { display: block; text-align: center; font-weight: bold; padding: 0 5px; }
+.date .month { display: block; text-align: center; font-size: 1em; font-weight: bold; padding: 0 5px; background-color: #C52F24; color: white; }
+
+h2.title { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; margin-top: 7px; }

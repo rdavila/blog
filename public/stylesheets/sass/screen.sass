@@ -9,6 +9,7 @@
 
 /* @group defaults */
 @import base.sass
+@import compass/utilities/general.sass
 /* @end */
 
 
@@ -101,3 +102,28 @@ body
 #github
   +columns(3)
   +omega
+
+.date
+  +inline-block
+  +border-radius("5px")
+  :border 1px solid black
+  .day
+    :display block
+    :text-align center
+    //:font-size 1em
+    :font-weight bold
+    :padding 0 5px
+    //:border 2px solid black
+  .month
+    :display block
+    :text-align center
+    :font-size 1em
+    :font-weight bold
+    :padding 0 5px
+    :background-color #C52F24
+    //:border 2px solid black
+    :color white
+h2.title
+  +inline-block
+  :margin-top 7px
+
