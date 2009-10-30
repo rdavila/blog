@@ -112,13 +112,16 @@ body { text-align: center; font-size: 87.5%; line-height: 150%; font-family: "lu
 
 #content { width: 77.143%; display: inline; float: left; margin-right: 2.857%; margin-left: 1.429%; }
 
-#footer { clear: both; margin-right: 1.429%; margin-left: 1.429%; padding-left: 20%; }
+#footer { clear: both; margin-right: 1.429%; margin-left: 1.429%; padding-left: 10%; padding-right: 10%; width: 97.143%; display: inline; float: left; margin-right: 2.857%; background-color: #333; }
+#footer ul { list-style-type: square; color: white; }
+#footer h3 { color: white; font-family: arial, serif; font-weight: bold; }
+#footer a { color: #fc0; }
 
-#delicious { width: 17.143%; display: inline; float: left; margin-right: 2.857%; margin-left: 1.429%; }
+#delicious { width: 27.143%; display: inline; float: left; margin-right: 2.857%; margin-left: 1.429%; }
 
-#twitter { width: 17.143%; display: inline; float: left; margin-right: 2.857%; }
+#twitter { width: 27.143%; display: inline; float: left; margin-right: 2.857%; }
 
-#github { width: 27.143%; display: inline; float: left; margin-right: 2.857%; margin-right: 1.429%; /* ugly hacks for IE6-7 */ #margin-right: 0.429%; /* end ugly hacks */ }
+#github { width: 17.143%; display: inline; float: left; margin-right: 2.857%; margin-right: 1.429%; /* ugly hacks for IE6-7 */ #margin-right: 0.429%; /* end ugly hacks */ }
 
 .date { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; /* Mozilla (FireFox, Camino) */ -moz-border-radius: 5px; /* Webkit (Safari, Chrome) */ -webkit-border-radius: 5px; /* CSS3 */ border-radius: 5px; border: 1px solid black; }
 .date .day { display: block; text-align: center; font-size: 1em; font-weight: bold; padding: 0 5px; }
