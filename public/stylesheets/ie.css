@@ -11,6 +11,9 @@ h2.title { font-size: 2.5em; padding-bottom: 1em; }
 h2.title a { color: #333; }
 h2.title a:hover { background-color: #cf9; }
 
+#older-posts h4 a { color: #333; }
+#older-posts h4 a:hover { background-color: #cf9; }
+
 h3 { font-size: 2em; padding: 0.5em 0; }
 
 h4 { font-size: 1.5em; padding: 0.5em 0; }
