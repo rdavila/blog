@@ -73,6 +73,10 @@
           %li= link_to 'Contacto'
           %li= link_to 'Archivo'
         #categories
+          %h4 Buscador
+          - form_tag '/search' do
+            = text_field_tag 'q', nil, :size => 8
+            = submit_tag 'Buscar'
           %h4 Categorias
           %ul
             %li= link_to 'Categoria 1 (28)', '#'
