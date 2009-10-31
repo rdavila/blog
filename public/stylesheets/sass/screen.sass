@@ -88,6 +88,24 @@ body
     &:hover
       :color #fff
       :background-color #000
+#categories
+  h4
+    :font-family arial, serif
+  ul
+    :margin-top 3px
+    li
+      :border-bottom 1px dashed black
+      :padding-top 0.5em
+      a
+        //:color #980905
+        :font-size 1em
+        :font-weight bold
+        :text-decoration none
+        +link-colors(#980905)
+        :font-family arial, serif
+        &:hover
+          :color #fff
+          :background-color #000
 #content
   +columns(8)
   +alpha

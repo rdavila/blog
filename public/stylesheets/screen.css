@@ -110,6 +110,12 @@ body { text-align: center; font-size: 87.5%; line-height: 150%; font-family: "lu
 #menu a { font-size: 1.5em; text-decoration: none; color: black; font-family: arial, serif; }
 #menu a:hover { color: #fff; background-color: #000; }
 
+#categories h4 { font-family: arial, serif; }
+#categories ul { margin-top: 3px; }
+#categories ul li { border-bottom: 1px dashed black; padding-top: 0.5em; }
+#categories ul li a { font-size: 1em; font-weight: bold; text-decoration: none; color: #980905; font-family: arial, serif; }
+#categories ul li a:hover { color: #fff; background-color: #000; }
+
 #content { width: 77.143%; display: inline; float: left; margin-right: 2.857%; margin-left: 1.429%; }
 
 #footer { clear: both; margin-right: 1.429%; margin-left: 1.429%; padding-left: 10%; padding-right: 10%; width: 97.143%; display: inline; float: left; margin-right: 2.857%; background-color: #333; }
