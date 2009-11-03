@@ -10,3 +10,6 @@ TypusUser:
   search: first_name, last_name, email, role
   application: Typus
   description: System Users Administration
+Post:
+  fields:
+    form: title, slug, active, body, excerpt, published_at, category

@@ -1,0 +1,112 @@
+!!! Strict
+%html{ "xml:lang" => "es", :lang => "es", :xmlns => "http://www.w3.org/1999/xhtml" }
+
+%head
+  = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+  = stylesheet_link_tag 'print.css', :media => 'print'
+  /[if IE]
+    = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+  %title Rubén On Rails
+
+%body
+  #container
+    #header
+      %h1= link_to "Blog.create(:name => 'Rubén On Rails')", root_url 
+    #main
+      #content
+        .post
+          %div.date
+            %span.day 09
+            %span.month ABR
+          %h2.title= link_to 'Modificando archivo existente con Rails', '#'
+          %p
+            Rails tiene muy buenas utilidades que usa internamente, pero que muchas veces no sabemos como sacarle provecho para nuestros proyectos.
+          %p
+            Esta vez tuve la necesidad de agregar contenido a un archivo, pero el nuevo contenido no iria al final del archivo lo cual es muy facil de hacer con Ruby sino en un lugar que yo necesitaba especificar, para esto recorde que Rails realiza esta tarea al momento que usamos generadores como por ejemplo el scaffold o el resource.
+
+          %p
+            Asi que decidi echarle un ojo al codigo de estos generadores y observe que define un metodo llamado gsub_file el cual se encuentra accesible y documentado para nuestro uso.
+
+          %p
+            Lo que yo necesitaba era modificar el archivo test/test_helper.rb como parte del trabajo de un template que estaba creando, el archivo inicialmente se encuentra asi:
+          %h3 Yet another header of content
+          %p
+            Lo que yo necesitaba era modificar el archivo test/test_helper.rb como parte del trabajo de un template que estaba creando, el archivo inicialmente se encuentra asi:
+        #older-posts
+          %h3 El periódico de ayer...
+          %ul
+            %li 
+              %div.date
+                %span.day 09
+                %span.month ABR
+              %h4= link_to 'Title of older post 1'
+            %li 
+              %div.date
+                %span.day 20
+                %span.month FEB
+              %h4= link_to 'Title of older post 1'
+            %li 
+              %div.date
+                %span.day 15
+                %span.month MAR
+              %h4= link_to 'Title of older post 1'
+            %li 
+              %div.date
+                %span.day 29
+                %span.month SET
+              %h4= link_to 'Title of older post 1'
+            %li 
+              %div.date
+                %span.day 16
+                %span.month OCT
+              %h4= link_to 'Title of older post 1'
+            %li 
+              %div.date
+                %span.day 01
+                %span.month JUL
+              %h4= link_to 'Title of older post 1'
+      #menu
+        %ul
+          %li= link_to 'Inicio'
+          %li= link_to 'Acerca de'
+          %li= link_to 'Portafolio'
+          %li= link_to 'Contacto'
+          %li= link_to 'Archivo'
+        #categories
+          %h4 Buscador
+          - form_tag '/search' do
+            = text_field_tag 'q', nil, :size => 8
+            = submit_tag 'Buscar'
+          %h4 Categorias
+          %ul
+            %li= link_to 'Categoria 1 (28)', '#'
+            %li= link_to 'Categoria 1 (28)', '#'
+            %li= link_to 'Categoria 1 (28)', '#'
+            %li= link_to 'Categoria 1 (28)', '#'
+            %li= link_to 'Categoria 1 (28)', '#'
+            %li= link_to 'Categoria 1 (28)', '#'
+    #footer
+      #delicious
+        %h3 Mi Delicious
+        %ul
+          %li= link_to 'Link 1'
+          %li= link_to 'Link 2'
+          %li= link_to 'Link 3'
+          %li= link_to 'Link 4'
+          %li= link_to 'Link 5'
+      #twitter
+        %h3 Mi Twitter
+        %ul
+          %li= link_to 'Link to status 1'
+          %li= link_to 'Link to status 2'
+          %li= link_to 'Link to status 3'
+          %li= link_to 'Link to status 4'
+          %li= link_to 'Link to status 5'
+      #github
+        %h3 Mi Github
+        %ul
+          %li= link_to 'Link to github project 1'
+          %li= link_to 'Link to github project 2'
+          %li= link_to 'Link to github project 3'
+          %li= link_to 'Link to github project 4'
+          %li= link_to 'Link to github project 5'
