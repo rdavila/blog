@@ -1,0 +1,35 @@
+# Typus Models Configuration File
+#
+# Use the README file on the same folder as this file as a reference to
+# customize this file to your needs.
+
+Category:
+  fields:
+    list: name, posts_count
+    form: name, posts_count
+    show: id, name, posts_count, created_at, updated_at
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: posts
+  filters:
+  search:
+  application: blog_rdavila_2009
+  description:
+
+Post:
+  fields:
+    list: title, slug, active, published_at, category
+    form: title, slug, active, body, body_html, excerpt, excerpt_html, published_at, category
+    show: id, title, slug, active, body, body_html, excerpt, excerpt_html, published_at, created_at, updated_at, category
+  actions:
+    index:
+    edit:
+  order_by:
+  relationships: category
+  filters:
+  search:
+  application: blog_rdavila_2009
+  description:
+
