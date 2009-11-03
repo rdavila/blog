@@ -14,57 +14,7 @@
       %h1= link_to "Blog.create(:name => 'Rubén On Rails')", root_url 
     #main
       #content
-        .post
-          %div.date
-            %span.day 09
-            %span.month ABR
-          %h2.title= link_to 'Modificando archivo existente con Rails', '#'
-          %p
-            Rails tiene muy buenas utilidades que usa internamente, pero que muchas veces no sabemos como sacarle provecho para nuestros proyectos.
-          %p
-            Esta vez tuve la necesidad de agregar contenido a un archivo, pero el nuevo contenido no iria al final del archivo lo cual es muy facil de hacer con Ruby sino en un lugar que yo necesitaba especificar, para esto recorde que Rails realiza esta tarea al momento que usamos generadores como por ejemplo el scaffold o el resource.
-
-          %p
-            Asi que decidi echarle un ojo al codigo de estos generadores y observe que define un metodo llamado gsub_file el cual se encuentra accesible y documentado para nuestro uso.
-
-          %p
-            Lo que yo necesitaba era modificar el archivo test/test_helper.rb como parte del trabajo de un template que estaba creando, el archivo inicialmente se encuentra asi:
-          %h3 Yet another header of content
-          %p
-            Lo que yo necesitaba era modificar el archivo test/test_helper.rb como parte del trabajo de un template que estaba creando, el archivo inicialmente se encuentra asi:
-        #older-posts
-          %h3 El periódico de ayer...
-          %ul
-            %li 
-              %div.date
-                %span.day 09
-                %span.month ABR
-              %h4= link_to 'Title of older post 1'
-            %li 
-              %div.date
-                %span.day 20
-                %span.month FEB
-              %h4= link_to 'Title of older post 1'
-            %li 
-              %div.date
-                %span.day 15
-                %span.month MAR
-              %h4= link_to 'Title of older post 1'
-            %li 
-              %div.date
-                %span.day 29
-                %span.month SET
-              %h4= link_to 'Title of older post 1'
-            %li 
-              %div.date
-                %span.day 16
-                %span.month OCT
-              %h4= link_to 'Title of older post 1'
-            %li 
-              %div.date
-                %span.day 01
-                %span.month JUL
-              %h4= link_to 'Title of older post 1'
+        = yield
       #menu
         %ul
           %li= link_to 'Inicio'

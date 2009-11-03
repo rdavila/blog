@@ -12,4 +12,8 @@ TypusUser:
   description: System Users Administration
 Post:
   fields:
+    list: title, slug, active, category
     form: title, slug, active, body, excerpt, published_at, category
+  order_by: -published_at
+  application: blog_rdavila_2009
+  description: Posts
