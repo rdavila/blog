@@ -40,4 +40,5 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
   config.gem 'haml', :version => '2.2.8'
   config.gem 'typus', :version => '0.9.39', :source => 'http://gemcutter.org'
+  config.gem 'www-delicious', :lib => 'www/delicious'
 end

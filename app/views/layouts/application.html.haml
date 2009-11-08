@@ -38,12 +38,10 @@
     #footer
       #delicious
         %h3 Mi Delicious
-        %ul
-          %li= link_to 'Link 1'
-          %li= link_to 'Link 2'
-          %li= link_to 'Link 3'
-          %li= link_to 'Link 4'
-          %li= link_to 'Link 5'
+        - cache 'delicious', :expire => 10.minutes do
+          %ul
+            - recent_bookmarks.each do |b|
+              %li= link_to(truncate(b.title, :length => 40), b.url.to_s, :title => b.title)
       #twitter
         %h3 Mi Twitter
         %ul
