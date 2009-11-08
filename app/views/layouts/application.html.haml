@@ -44,17 +44,17 @@
               %li= link_to(truncate(b.title, :length => 40), b.url.to_s, :title => b.title)
       #twitter
         %h3 Mi Twitter
-        %ul
-          %li= link_to 'Link to status 1'
-          %li= link_to 'Link to status 2'
-          %li= link_to 'Link to status 3'
-          %li= link_to 'Link to status 4'
-          %li= link_to 'Link to status 5'
+        - cache 'twitter', :expire => 10.minutes do
+          %ul
+            - recent_tweets.each do |text, id|
+              %li= link_to(truncate(text, :length => 40), "http://twitter.com/rdavila/status/#{id}", :title => text)
       #github
         %h3 Mi Github
-        %ul
-          %li= link_to 'Link to github project 1'
-          %li= link_to 'Link to github project 2'
-          %li= link_to 'Link to github project 3'
-          %li= link_to 'Link to github project 4'
-          %li= link_to 'Link to github project 5'
+        #github-badge
+        %script(type="text/javascript" charset="utf-8")
+          GITHUB_USERNAME="rdavila";
+          GITHUB_LIST_LENGTH=10;
+          GITHUB_THEME="black"; // try 'black'
+          GITHUB_TITLE = "Mis proyectos"
+          GITHUB_SHOW_ALL = "Show all"
+        %script(src="http://drnic.github.com/github-badges/dist/github-badge-launcher.js" type="text/javascript")
