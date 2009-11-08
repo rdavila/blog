@@ -1,39 +1,13 @@
 .post
-  %div.date
-    %span.day 09
-    %span.month ABR
+  = post_date(@last_post)
   %h2.title= link_to(@last_post.title, '#')
   = @last_post.body
-#older-posts
-  %h3 El periódico de ayer...
-  %ul
-    %li 
-      %div.date
-        %span.day 09
-        %span.month ABR
-      %h4= link_to 'Title of older post 1'
-    %li 
-      %div.date
-        %span.day 20
-        %span.month FEB
-      %h4= link_to 'Title of older post 1'
-    %li 
-      %div.date
-        %span.day 15
-        %span.month MAR
-      %h4= link_to 'Title of older post 1'
-    %li 
-      %div.date
-        %span.day 29
-        %span.month SET
-      %h4= link_to 'Title of older post 1'
-    %li 
-      %div.date
-        %span.day 16
-        %span.month OCT
-      %h4= link_to 'Title of older post 1'
-    %li 
-      %div.date
-        %span.day 01
-        %span.month JUL
-      %h4= link_to 'Title of older post 1'
+
+- if @posts.any?
+  #older-posts
+    %h3 El periódico de ayer...
+    %ul
+    - @posts.each do |p|
+      %li
+        = post_date(p)
+        %h4= link_to(p.title, '#')

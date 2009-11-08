@@ -1,5 +1,6 @@
 class HomesController < ApplicationController
   def show
-    @last_post = Post.last
+    @posts = Post.all(:limit => 11)
+    @last_post = @posts.shift
   end
 end
