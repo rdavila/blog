@@ -28,13 +28,7 @@
             = text_field_tag 'q', nil, :size => 8
             = submit_tag 'Buscar'
           %h4 Categorias
-          %ul
-            %li= link_to 'Categoria 1 (28)', '#'
-            %li= link_to 'Categoria 1 (28)', '#'
-            %li= link_to 'Categoria 1 (28)', '#'
-            %li= link_to 'Categoria 1 (28)', '#'
-            %li= link_to 'Categoria 1 (28)', '#'
-            %li= link_to 'Categoria 1 (28)', '#'
+          = render 'layouts/categories'
     #footer
       #delicious
         %h3 Mi Delicious

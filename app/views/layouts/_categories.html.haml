@@ -1,0 +1,5 @@
+- categories = Category.all
+- if categories.any?
+  %ul
+    - categories.each do |category|
+      %li= link_to category.name, '#'
