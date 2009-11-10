@@ -17,3 +17,9 @@ Post:
   order_by: -published_at
   application: blog_rdavila_2009
   description: Posts
+Category:
+  fields:
+    list: name, posts_count
+    form: name
+  application: blog_rdavila_2009
+  description: Categorias
