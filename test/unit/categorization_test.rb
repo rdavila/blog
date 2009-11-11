@@ -1,8 +1,9 @@
 require 'test_helper'
 
 class CategorizationTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
-  end
+  should_have_db_columns :category_id, :post_id
+  should_have_db_indices :category_id, :post_id
+
+  should_belong_to :category
+  should_belong_to :post
 end

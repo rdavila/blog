@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
   default_scope :order => 'published_at DESC', :conditions => { :active => true }
 
-  belongs_to :category, :counter_cache => true
+  has_many :categorizations
+  has_many :categories, :through => :categorizations
 end
