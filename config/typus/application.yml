@@ -6,7 +6,7 @@
 Category:
   fields:
     list: name, posts_count
-    form: name, posts_count
+    form: name
     show: id, name, posts_count, created_at, updated_at
   actions:
     index:
@@ -15,21 +15,21 @@ Category:
   relationships: posts
   filters:
   search:
-  application: blog_rdavila_2009
+  application: Blog
   description:
 
 Post:
   fields:
-    list: title, slug, active, published_at, category
-    form: title, slug, active, body, body_html, excerpt, excerpt_html, published_at, category
-    show: id, title, slug, active, body, body_html, excerpt, excerpt_html, published_at, created_at, updated_at, category
+    list: title, slug, active, published_at
+    form: title, slug, body, excerpt, published_at, active
+    show: id, title, slug, active, body, excerpt, published_at, created_at, updated_at
   actions:
     index:
     edit:
   order_by:
-  relationships: category
+  relationships: categories
   filters:
   search:
-  application: blog_rdavila_2009
+  application: Blog
   description:
 
