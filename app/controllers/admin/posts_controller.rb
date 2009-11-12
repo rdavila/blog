@@ -33,5 +33,24 @@ class Admin::PostsController < Admin::MasterController
   end
 
 =end
+  def create
+    @post = Post.new(params[:post])
+    if @post.save
+      flash[:success] = 'Post creado satisfactoriamente.'
+      redirect_to :action => 'index'
+    else
+      render :new
+    end
+  end
 
+  def update
+    @post = Post.find(params[:id])
+
+    if @post.update_attributes(params[:post])
+      flash[:success] = 'Post actualizado satisfactoriamente.'
+      redirect_to :action => 'index'
+    else
+      render :action => 'edit'
+    end
+  end
 end

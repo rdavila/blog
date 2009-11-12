@@ -27,7 +27,7 @@ Post:
     index:
     edit:
   order_by:
-  relationships: categories
+  relationships:
   filters:
   search:
   application: Blog

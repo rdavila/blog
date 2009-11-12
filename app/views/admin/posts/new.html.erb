@@ -1,0 +1,30 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "formtastic" %>
+  <%= stylesheet_link_tag "formtastic_changes" %>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= typus_block :location => @resource[:self], :partial => 'sidebar' %>
+  <%= actions %>
+<% end %>
+
+<%= display_link_to_previous if params[:back_to] %>
+
+<h2><%= link_to @resource[:human_name].pluralize, :action => 'index' %> &rsaquo; 
+    <%= _("New") %></h2>
+
+<%= typus_block :location => @resource[:self], :partial => 'new' %>
+
+<% semantic_form_for @item, 
+    :url  => { :action => 'create' }, :html => { :multipart => true } do |f| %>
+
+  <%= f.input :title  %>
+  <%= f.input :slug  %>
+  <%= f.input :excerpt  %>
+  <%= f.input :body %>
+  <%= f.input :categories %>
+  <%= f.input :active %>
+  <%= f.input :published_at  %>
+  <p><%= submit_tag _("Create entry"), :class => 'button' %></p>
+
+<% end %>
