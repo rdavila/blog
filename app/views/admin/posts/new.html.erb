@@ -15,8 +15,8 @@
 
 <%= typus_block :location => @resource[:self], :partial => 'new' %>
 
-<% semantic_form_for @item, 
-    :url  => { :action => 'create' }, :html => { :multipart => true } do |f| %>
+<% semantic_form_for @post, 
+    :url  => { :action => 'create'}, :html => { :multipart => true } do |f| %>
 
   <%= f.input :title  %>
   <%= f.input :slug  %>

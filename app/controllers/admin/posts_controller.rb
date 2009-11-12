@@ -33,6 +33,10 @@ class Admin::PostsController < Admin::MasterController
   end
 
 =end
+  def new
+    @post = Post.new
+  end
+
   def create
     @post = Post.new(params[:post])
     if @post.save
@@ -41,6 +45,10 @@ class Admin::PostsController < Admin::MasterController
     else
       render :new
     end
+  end
+
+  def edit
+    @post = Post.find(params[:id])
   end
 
   def update
