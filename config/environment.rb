@@ -42,4 +42,5 @@ Rails::Initializer.run do |config|
   config.gem 'typus', :version => '0.9.39', :source => 'http://gemcutter.org'
   config.gem 'www-delicious', :lib => 'www/delicious'
   config.gem 'twitter'
+  config.gem 'formtastic'
 end
