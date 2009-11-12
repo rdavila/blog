@@ -43,4 +43,5 @@ Rails::Initializer.run do |config|
   config.gem 'www-delicious', :lib => 'www/delicious'
   config.gem 'twitter'
   config.gem 'formtastic'
+  config.gem 'friendly_id', :version => '2.2.4'
 end
