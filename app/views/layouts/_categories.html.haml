@@ -1,5 +1,5 @@
 - categories = Category.all
 - if categories.any?
   %ul
-    - categories.each do |category|
-      %li= link_to category.name, '#'
+    - categories.each do |c|
+      %li= link_to "#{c.name} (#{c.posts.size})", '#'

@@ -7,12 +7,17 @@ class Post < ActiveRecord::Base
 
   validates_presence_of :title, :body, :published_at
 
-  has_many :categorizations, :dependent => :delete_all
-  has_many :categories, :through => :categorizations
+  has_many :categorizations, :dependent => :destroy
+  has_many :categories, :through => :categorizations,
+    :after_remove => :update_category_counter
 
   protected
 
     def generate_html
       self.body_html = PostFormatter.format(self.body) if self.valid?
+    end
+
+    def update_category_counter(category)
+      Category.decrement_counter(:posts_count, category.id)
     end
 end
