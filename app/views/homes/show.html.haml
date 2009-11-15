@@ -2,7 +2,7 @@
   = post_date(@last_post)
   %h2.title= link_to(@last_post.title, '#')
   .content
-    = @last_post.body
+    = prettify(@last_post.body)
 
 - if @posts.any?
   #older-posts

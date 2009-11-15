@@ -44,4 +44,5 @@ Rails::Initializer.run do |config|
   config.gem 'twitter'
   config.gem 'formtastic'
   config.gem 'friendly_id', :version => '2.2.4'
+  config.gem 'RedCloth'
 end
