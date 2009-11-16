@@ -11,6 +11,8 @@ class Post < ActiveRecord::Base
   has_many :categories, :through => :categorizations,
     :after_remove => :update_category_counter
 
+  named_scope :active, :conditions => { 'posts.active' => true }
+
   protected
 
     def generate_html
