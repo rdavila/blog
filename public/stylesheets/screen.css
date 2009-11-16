@@ -98,7 +98,7 @@ del { text-decoration: line-through; }
 /* uncomment, adjust and use for debugging    */
 /* #page   +show-grid("grid.png") */
 /* @end */
-body { text-align: center; font-size: 87.5%; line-height: 150%; font-family: "lucida grande",verdana,sans-serif; }
+body { text-align: center; font-size: 87.5%; line-height: 1.5em; font-family: "lucida grande",verdana,sans-serif; }
 
 #container { overflow: hidden; display: inline-block; text-align: left; margin-left: auto; margin-right: auto; width: 70em; max-width: 100%; }
 #container { display: block; }
@@ -108,7 +108,7 @@ body { text-align: center; font-size: 87.5%; line-height: 150%; font-family: "lu
 
 #main { padding-top: 2em; }
 
-#menu { width: 17.143%; display: inline; float: left; margin-right: 2.857%; margin-right: 1.429%; /* ugly hacks for IE6-7 */ #margin-right: 0.429%; /* end ugly hacks */ }
+#menu { width: 17.143%; display: inline; float: left; margin-right: 2.857%; display: inline; float: right; margin-right: 1.429%; /* ugly hacks for IE6-7 */ #margin-right: 0.429%; /* end ugly hacks */ }
 #menu ul { margin-top: -1em; }
 #menu ul li { list-style-type: none; margin-left: 0px; }
 #menu ul li { border-bottom: 0.1em solid black; padding-top: 1em; }
@@ -132,7 +132,7 @@ body { text-align: center; font-size: 87.5%; line-height: 150%; font-family: "lu
 
 #twitter { width: 27.143%; display: inline; float: left; margin-right: 2.857%; }
 
-#github { width: 17.143%; display: inline; float: left; margin-right: 2.857%; margin-right: 1.429%; /* ugly hacks for IE6-7 */ #margin-right: 0.429%; /* end ugly hacks */ }
+#github { width: 17.143%; display: inline; float: left; margin-right: 2.857%; display: inline; float: right; margin-right: 1.429%; /* ugly hacks for IE6-7 */ #margin-right: 0.429%; /* end ugly hacks */ }
 
 .date { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; /* Mozilla (FireFox, Camino) */ -moz-border-radius: 5px; /* Webkit (Safari, Chrome) */ -webkit-border-radius: 5px; /* CSS3 */ border-radius: 5px; border: 1px solid black; }
 .date .day { display: block; text-align: center; font-size: 1em; font-weight: bold; padding: 0 5px; }
@@ -144,4 +144,5 @@ h2.title { zoom: 1; display: inline; display: -moz-inline-box; display: inline-b
 
 #older-posts h3 { border-top: 2px solid black; margin-top: 10px; }
 
+#older-posts ul li { list-style-type: none; margin-left: 0px; }
 #older-posts ul li { margin-top: 5px; }

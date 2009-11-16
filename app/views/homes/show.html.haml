@@ -8,7 +8,7 @@
   #older-posts
     %h3 El periódico de ayer...
     %ul
-    - @posts.each do |p|
-      %li
-        = post_date(p)
-        %h4= link_to(p.title, '#')
+      - @posts.each do |post|
+        %li
+          = post_date(post)
+          %h4= post_link(post)
