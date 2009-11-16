@@ -1,0 +1,5 @@
+.post
+  = post_date(@post)
+  %h2.title= post_link(@post)
+  .content
+    = @post.body_html
