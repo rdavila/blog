@@ -1,6 +1,6 @@
 .post
   = post_date(@last_post)
-  %h2.title= link_to(@last_post.title, '#')
+  %h2.title= post_link(@last_post)
   .content
     = @last_post.body_html
 
