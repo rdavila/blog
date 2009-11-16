@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
   has_friendly_id :title, :use_slug => true
 
-  default_scope :order => 'published_at DESC', :conditions => { 'posts.active' => true }
+  default_scope :order => 'published_at DESC'
 
   before_save :generate_html
 

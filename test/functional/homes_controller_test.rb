@@ -3,8 +3,8 @@ require 'test_helper'
 class HomesControllerTest < ActionController::TestCase
   context 'on GET show' do
     setup do
-      @posts = [Factory.build(:last_post), Factory.build(:first_post)]
-      Post.stubs(:all).returns(@posts)
+      posts = [Factory(:last_post), Factory(:first_post)]
+      Post.stubs(:all).returns(posts)
       get :show
     end
 
