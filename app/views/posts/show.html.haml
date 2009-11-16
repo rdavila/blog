@@ -1,5 +1,10 @@
 .post
   = post_date(@post)
   %h2.title= post_link(@post)
+  = post_link(@post, 'Comments', 'disqus_thread')
   .content
     = @post.body_html
+  #comments
+    :plain
+      <div id="disqus_thread"></div>
+      <script type="text/javascript" src="http://disqus.com/forums/blogtest2009/embed.js"></script><noscript><a href="http://disqus.com/forums/blogtest2009/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>

@@ -1,22 +1,45 @@
-/* Welcome to Susy. Use this file to write IE specific override styles. Import this file using the following HTML or equivalent: <!--[if IE]>   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /> <![endif]--> */
+/* Welcome to Susy. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
 /* @group defaults */
 /* @group links */
 
 
 /* @end */
 /* @group headers */
-h1, h2, h3, h4, h5, h6 { font-family: Georgia,serif; }
+/* line 64, sass/_base.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia,serif; }
 
-h2.title { font-size: 2.5em; padding-bottom: 1em; }
-h2.title a { color: #333; }
-h2.title a:hover { background-color: #cf9; }
+/* line 67, sass/_base.sass */
+h2.title {
+  font-size: 2.5em;
+  padding-bottom: 1em; }
+  /* line 70, sass/_base.sass */
+  h2.title a {
+    color: #333; }
+    /* line 72, sass/_base.sass */
+    h2.title a:hover {
+      background-color: #cf9; }
 
-#older-posts h4 a { color: #333; }
-#older-posts h4 a:hover { background-color: #cf9; }
+/* line 75, sass/_base.sass */
+#older-posts h4 a {
+  color: #333; }
+  /* line 77, sass/_base.sass */
+  #older-posts h4 a:hover {
+    background-color: #cf9; }
 
-h3 { font-size: 2em; padding: 0.5em 0; }
+/* line 79, sass/_base.sass */
+h3 {
+  font-size: 2em;
+  padding: 0.5em 0; }
 
-h4 { font-size: 1.5em; padding: 0.5em 0; }
+/* line 83, sass/_base.sass */
+h4 {
+  font-size: 1.5em;
+  padding: 0.5em 0; }
 
 /* @end */
 /* @group forms */
@@ -39,25 +62,46 @@ h4 { font-size: 1.5em; padding: 0.5em 0; }
 
 /* @end */
 /* @group block tags */
-pre { margin: 20px 30px; padding: 15px 10px; line-height: 1.5em; overflow: auto; }
+/* line 132, sass/_base.sass */
+pre {
+  margin: 20px 30px;
+  padding: 15px 10px;
+  line-height: 1.5em;
+  overflow: auto; }
 
-p { padding-bottom: 0.5em; }
+/* line 138, sass/_base.sass */
+p {
+  padding-bottom: 0.5em; }
 
-ol { list-style: decimal; margin: 0 1.5em 1.5em 1.5em; }
+/* line 154, sass/_base.sass */
+ol {
+  list-style: decimal;
+  margin: 0 1.5em 1.5em 1.5em; }
 
-ul { list-style: disc; margin: 0 1.5em 1.5em 1.5em; }
+/* line 157, sass/_base.sass */
+ul {
+  list-style: disc;
+  margin: 0 1.5em 1.5em 1.5em; }
 
 
 /* @end */
 /* @group inline tags */
 
-em { font-style: italic; }
+/* line 169, sass/_base.sass */
+em {
+  font-style: italic; }
 
-strong { font-weight: bold; }
+/* line 172, sass/_base.sass */
+strong {
+  font-weight: bold; }
 
-ins { text-decoration: underline; }
+/* line 175, sass/_base.sass */
+ins {
+  text-decoration: underline; }
 
-del { text-decoration: line-through; }
+/* line 178, sass/_base.sass */
+del {
+  text-decoration: line-through; }
 
 
 /* @end */
