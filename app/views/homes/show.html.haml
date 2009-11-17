@@ -1,7 +1,9 @@
 .post
   = post_date(@last_post)
   %h2.title= post_link(@last_post)
-  %p= post_link(@last_post, 'Comentarios', 'disqus_thread')
+  %p.comments_count
+    = image_tag 'comment-icon.png'
+    = post_link(@last_post, 'Comentarios', 'disqus_thread')
 
   .content
     = @last_post.body_html

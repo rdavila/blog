@@ -396,3 +396,12 @@ h2.title {
 /* line 155, sass/screen.sass */
 #older-posts ul li {
   margin-top: 5px; }
+
+/* line 158, sass/screen.sass */
+#comments {
+  border-top: 2px solid black;
+  padding-top: 1em; }
+
+/* line 161, sass/screen.sass */
+.comments_count {
+  text-align: center; }
