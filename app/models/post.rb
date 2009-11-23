@@ -13,6 +13,12 @@ class Post < ActiveRecord::Base
 
   named_scope :active, :conditions => { 'posts.active' => true }
 
+  class <<self
+    def find_all_grouped_by_month
+      active.all.group_by { |p| p.published_at.beginning_of_month }
+    end
+  end
+
   protected
 
     def generate_html

@@ -1,0 +1,8 @@
+- @months.each do |date, posts|
+  %p
+    %strong
+      = I18n.l(date, :format => '%Y - %B')
+
+  %ul
+    - posts.each do |p|
+      %li= post_link(p)
