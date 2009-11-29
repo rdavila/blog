@@ -3,6 +3,7 @@ tags
 log/*
 tmp/*
 config/database.yml
+config/settings.yml
 db/*.sqlite3
 db/schema.rb
 db/schema.sql
