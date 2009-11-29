@@ -1,0 +1,24 @@
+#:action_controller: &action_controller
+#  :session:
+#    :secret: 067b877304e00d1a1e7b83ac46044b1aa72ee904b2090c0636a54263dc9fbecb8e719acb9e566655efe3e87df336e0483c532bf9b4a350958f0262ddc3feb208
+#
+#development:
+#  :action_controller:
+#    <<: *action_controller
+:delicious: &delicious
+  :user: user
+  :password: pass
+:twitter: &twitter
+  :user: user
+  :password: pass
+
+test:
+  :delicious:
+    <<: *delicious
+  :twitter:
+    <<: *twitter
+development:
+  :delicious:
+    <<: *delicious
+  :twitter:
+    <<: *twitter
