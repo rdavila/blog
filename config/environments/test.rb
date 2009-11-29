@@ -30,3 +30,5 @@ config.gem 'thoughtbot-shoulda', :lib => 'shoulda'
 config.gem 'thoughtbot-factory_girl', :lib => 'factory_girl'
 #config.gem 'mocha'
 config.gem 'jferris-mocha', :lib => 'mocha', :source => 'http://gems.github.com'
+config.gem 'fakeweb', :version => '1.2.7'
+

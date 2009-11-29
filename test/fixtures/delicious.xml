@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<posts user="ruda84" tag="">
+  <post href="http://robots.thoughtbot.com/post/254496652/aint-no-calla-back-girl" hash="4cd8cbc849bfab84220f51d5856811ad" description="Ain't no calla back girl - GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS" tag="testing ruby rails factorygirl shoulda" time="2009-11-27T22:41:49Z" extended=""/>
+  <post href="http://blog.caboo.se/articles/2008/12/15/why-aren-t-you-testing" hash="8077b0c6401f31fb34e56cd04730a1a7" description="caboose Why aren't you testing?" tag="rails testing" time="2009-11-26T16:16:05Z" extended=""/>
+  <post href="http://yehudakatz.com/2009/11/15/metaprogramming-in-ruby-its-all-about-the-self/" hash="58644b8ca1ae2650b55f43e5ab7dc51e" description="Metaprogramming in Ruby: It’s All About the Self « Katz Got Your Tongue?" tag="ruby metaprogramming development programming" time="2009-11-24T19:43:34Z" extended=""/>
+  <post href="http://www.allthingsdistributed.com/2008/12/eventually_consistent.html" hash="01beb828579bc85521fd9e108032871b" description="Eventually Consistent - Revisited - All Things Distributed" tag="distributed scalability architecture" time="2009-11-24T19:32:45Z" extended=""/>
+  <post href="http://blogs.digitar.com/jjww/2009/01/rabbits-and-warrens/" hash="9be8b50883f39a65b108a7a00aefc064" description="Rabbits and warrens. - Jason’s .plan" tag="rabbitmq amqp messaging queue python" time="2009-11-24T19:32:27Z" extended=""/>
+  <post href="http://github.com/franciscotufro/environmental_seeder" hash="27bbca8962d98dbe45c708212857304d" description="franciscotufro's environmental_seeder at master - GitHub" tag="activerecord database development seed" time="2009-11-24T19:26:06Z" extended=""/>
+  <post href="http://documentcloud.github.com/jammit/" hash="1eedbac376e40da87d50cb353bc1c250" description="Jammit: Industrial Strength Asset Packaging for Rails" tag="rails javascript css performance optimization compression" time="2009-11-24T19:25:16Z" extended=""/>
+  <post href="http://vinsol.com/blog/2009/11/16/11-things-to-consider-before-deploying-your-rails-application/" hash="8167665eed4f95ed844d779611da4b58" description="11 Things to Consider Before Deploying Your Rails Application | Vinsol" tag="rails deployment tips" time="2009-11-24T19:24:59Z" extended=""/>
+  <post href="http://simonwillison.net/2009/Nov/23/node/" hash="51eb5401e2eaf6cf8cd3ac08883936ea" description="Node.js is genuinely exciting" tag="javascript server programming development" time="2009-11-24T19:14:19Z" extended=""/>
+  <post href="https://lordgun.com/2008/05/tuning-mysql-innodb/" hash="015212bda115ef74a97ad5b3b25bc23a" description="Tuning Mysql Innodb for massive Insert | Cedric Nilly aka lordgun" tag="mysql tunning performance" time="2009-11-20T21:10:27Z" extended=""/>
+</posts>
+<!-- fe03.api.del.ac4.yahoo.net uncompressed/chunked Sat Nov 28 16:54:12 PST 2009 -->
