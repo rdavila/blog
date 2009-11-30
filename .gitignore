@@ -5,9 +5,11 @@ tmp/*
 config/database.yml
 config/settings.yml
 config/sphinx.yml
+config/*.sphinx.conf
 db/*.sqlite3
 db/schema.rb
 db/schema.sql
+db/sphinx
 *.tmp
 .sass-cache/*
 public/stylesheets/sass/.sass-cache/*

@@ -1,6 +1,15 @@
 class Post < ActiveRecord::Base
   has_friendly_id :title, :use_slug => true
 
+  define_index do
+    #fields
+    indexes title
+    indexes body_html
+
+    #attributes
+    has published_at
+  end
+
   default_scope :order => 'published_at DESC'
 
   before_save :generate_html

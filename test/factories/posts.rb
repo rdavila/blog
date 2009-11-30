@@ -13,3 +13,7 @@ Factory.define(:last_post, :class => Post) do |p|
   p.published_at  2.days.from_now
   p.active        true
 end
+
+Factory.define :post, :parent => :first_post do |p|
+  p.title         'Rails related post'
+end

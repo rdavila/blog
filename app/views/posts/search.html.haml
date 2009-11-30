@@ -1,0 +1,7 @@
+- if @posts.present?
+  %h4 Resultados de búsqueda para: #{params[:q]}
+  %ul
+    - @posts.each do |p|
+      %li= post_link(p)
+- else
+  %h4 No se encontraron posts.
