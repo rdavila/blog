@@ -55,4 +55,10 @@ Rails::Initializer.run do |config|
   config.gem 'formtastic'
   config.gem 'friendly_id', :version => '2.2.4'
   config.gem 'RedCloth'
+  config.gem(
+    'thinking-sphinx',
+    :lib     => 'thinking_sphinx/0.9.8',
+    :version => '1.3.7'
+  )
+
 end
