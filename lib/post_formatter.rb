@@ -16,7 +16,7 @@ class PostFormatter
         language = nil
         nil
       elsif in_pre
-        lang = language ? language : "ruby"
+        lang = language ? language : "plain_text"
         preserve(code(piece.strip, :lang => lang))
       else
         textilize(piece)
