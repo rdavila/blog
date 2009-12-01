@@ -1,0 +1,7 @@
+- if @posts.present?
+  %h4 Categoría: #{@category.name}
+  %ul
+    - @category.posts.each do |post|
+      %li= post_link(post)
+- else
+  %h4 No existen posts para esta categoria.

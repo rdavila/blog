@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resource  :ui
   map.resources :posts, :only => :show
+  map.resources :categories
 
   map.seo_post '/:year/:month/:day/:id', 
     :controller => 'posts', :action => 'show'
