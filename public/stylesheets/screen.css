@@ -1,63 +1,22 @@
-/* Welcome to Susy. Use this file to define screen styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" /> */
+/* Welcome to Susy. Use this file to define screen styles. Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" /> */
 /* @group reset */
-/* line 6, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 
-/* line 17, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
-*:focus {
-  outline: 0; }
+*:focus { outline: 0; }
 
-/* line 20, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
-body {
-  line-height: 1em;
-  color: black;
-  background: #fff; }
+body { line-height: 1em; color: black; background: #fff; }
 
-/* line 23, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
-ol, ul {
-  list-style: none; }
+ol, ul { list-style: none; }
 
 /* tables still need 'cellspacing="0"' in the markup */
-/* line 27, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle; }
+table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
 
-/* line 30, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
 
-/* line 33, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
-q, blockquote {
-  quotes: "" ""; }
-  /* line 101, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: ""; }
+q, blockquote { quotes: "" ""; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
 
-/* line 36, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_reset.sass */
-img a {
-  border: none; }
+img a { border: none; }
 
 /* @end */
 /* @group defaults */
@@ -66,37 +25,18 @@ img a {
 
 /* @end */
 /* @group headers */
-/* line 64, sass/_base.sass */
-h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia,serif; }
+h1, h2, h3, h4, h5, h6 { font-family: Georgia,serif; }
 
-/* line 67, sass/_base.sass */
-h2.title {
-  font-size: 2.5em;
-  padding-bottom: 1em; }
-  /* line 70, sass/_base.sass */
-  h2.title a {
-    color: #333; }
-    /* line 72, sass/_base.sass */
-    h2.title a:hover {
-      background-color: #cf9; }
+h2.title { font-size: 2.5em; padding-bottom: 1em; }
+h2.title a { color: #333; }
+h2.title a:hover { background-color: #cf9; }
 
-/* line 75, sass/_base.sass */
-#older-posts h4 a {
-  color: #333; }
-  /* line 77, sass/_base.sass */
-  #older-posts h4 a:hover {
-    background-color: #cf9; }
+#older-posts h4 a { color: #333; }
+#older-posts h4 a:hover { background-color: #cf9; }
 
-/* line 79, sass/_base.sass */
-h3 {
-  font-size: 2em;
-  padding: 0.5em 0; }
+h3 { font-size: 2em; padding: 0.5em 0; }
 
-/* line 83, sass/_base.sass */
-h4 {
-  font-size: 1.5em;
-  padding: 0.5em 0; }
+h4 { font-size: 1.5em; padding: 0.5em 0; }
 
 /* @end */
 /* @group forms */
@@ -119,46 +59,25 @@ h4 {
 
 /* @end */
 /* @group block tags */
-/* line 132, sass/_base.sass */
-pre {
-  margin: 20px 30px;
-  padding: 15px 10px;
-  line-height: 1.5em;
-  overflow: auto; }
+pre { margin: 20px 30px; padding: 15px 10px; line-height: 1.5em; overflow: auto; }
 
-/* line 138, sass/_base.sass */
-p {
-  padding-bottom: 0.5em; }
+p { padding-bottom: 0.5em; }
 
-/* line 154, sass/_base.sass */
-ol {
-  list-style: decimal;
-  margin: 0 1.5em 1.5em 1.5em; }
+ol { list-style: decimal; margin: 0 1.5em 1.5em 1.5em; }
 
-/* line 157, sass/_base.sass */
-ul {
-  list-style: disc;
-  margin: 0 1.5em 1.5em 1.5em; }
+ul { list-style: disc; margin: 0 1.5em 1.5em 1.5em; }
 
 
 /* @end */
 /* @group inline tags */
 
-/* line 169, sass/_base.sass */
-em {
-  font-style: italic; }
+em { font-style: italic; }
 
-/* line 172, sass/_base.sass */
-strong {
-  font-weight: bold; }
+strong { font-weight: bold; }
 
-/* line 175, sass/_base.sass */
-ins {
-  text-decoration: underline; }
+ins { text-decoration: underline; }
 
-/* line 178, sass/_base.sass */
-del {
-  text-decoration: line-through; }
+del { text-decoration: line-through; }
 
 
 /* @end */
@@ -177,231 +96,57 @@ del {
 /* @end */
 /* @group DEBUG */
 /* uncomment, adjust and use for debugging    */
-/* #page
- *   +show-grid("grid.png") */
+/* #page   +show-grid("grid.png") */
 /* @end */
-/* line 55, sass/screen.sass */
-body {
-  text-align: center;
-  font-size: 87.5%;
-  line-height: 1.5em;
-  font-family: "lucida grande",verdana,sans-serif; }
+body { text-align: center; font-size: 87.5%; line-height: 1.5em; font-family: "lucida grande",verdana,sans-serif; }
 
-/* line 58, sass/screen.sass */
-#container {
-  overflow: hidden;
-  display: inline-block;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70em;
-  max-width: 100%; }
-  /* line 5, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_hacks.sass */
-  #container {
-    display: block; }
+#container { overflow: hidden; display: inline-block; text-align: left; margin-left: auto; margin-right: auto; width: 70em; max-width: 100%; }
+#container { display: block; }
 
-/* line 61, sass/screen.sass */
-#header {
-  clear: both;
-  margin-right: 1.429%;
-  margin-left: 1.429%;
-  padding: 2em 0;
-  background: transparent url(/images/header_shadow.gif) repeat-x scroll left bottom; }
-  /* line 65, sass/screen.sass */
-  #header a {
-    font-size: 3.2em;
-    color: #872633;
-    text-decoration: none;
-    font-family: georgia, serif;
-    font-weight: bold; }
+#header { clear: both; margin-right: 1.429%; margin-left: 1.429%; padding: 2em 0; background: transparent url(/images/header_shadow.gif) repeat-x scroll left bottom; }
+#header a { font-size: 3.2em; color: #872633; text-decoration: none; font-family: georgia, serif; font-weight: bold; }
 
-/* line 71, sass/screen.sass */
-#main {
-  padding-top: 2em; }
+#main { padding-top: 2em; }
 
-/* line 73, sass/screen.sass */
-#menu {
-  width: 17.143%;
-  display: inline;
-  float: left;
-  margin-right: 2.857%;
-  display: inline;
-  float: right;
-  margin-right: 1.429%;
-  /* ugly hacks for IE6-7 */
-  #margin-right: 0.429%;
-  /* end ugly hacks */ }
-  /* line 76, sass/screen.sass */
-  #menu ul {
-    margin-top: -1em; }
-    /* line 8, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.sass */
-    #menu ul li {
-      list-style-type: none;
-      margin-left: 0px; }
-    /* line 79, sass/screen.sass */
-    #menu ul li {
-      border-bottom: 0.1em solid black;
-      padding-top: 1em; }
-  /* line 82, sass/screen.sass */
-  #menu a {
-    font-size: 1.5em;
-    text-decoration: none;
-    color: black;
-    font-family: arial, serif; }
-    /* line 87, sass/screen.sass */
-    #menu a:hover {
-      color: #fff;
-      background-color: #000; }
+#menu { width: 17.143%; display: inline; float: left; margin-right: 2.857%; display: inline; float: right; margin-right: 1.429%; /* ugly hacks for IE6-7 */ #margin-right: 0.429%; /* end ugly hacks */ }
+#menu ul { margin-top: -1em; }
+#menu ul li { list-style-type: none; margin-left: 0px; }
+#menu ul li { border-bottom: 0.1em solid black; padding-top: 1em; }
+#menu a { font-size: 1.5em; text-decoration: none; color: black; font-family: arial, serif; }
+#menu a:hover { color: #fff; background-color: #000; }
 
-/* line 91, sass/screen.sass */
-#categories h4 {
-  font-family: arial, serif; }
-/* line 93, sass/screen.sass */
-#categories ul {
-  margin-top: 3px; }
-  /* line 95, sass/screen.sass */
-  #categories ul li {
-    border-bottom: 1px dashed black;
-    padding-top: 0.5em; }
-    /* line 98, sass/screen.sass */
-    #categories ul li a {
-      font-size: 1em;
-      font-weight: bold;
-      text-decoration: none;
-      color: #980905;
-      font-family: arial, serif; }
-      /* line 104, sass/screen.sass */
-      #categories ul li a:hover {
-        color: #fff;
-        background-color: #000; }
+#categories h4 { font-family: arial, serif; }
+#categories ul { margin-top: 3px; }
+#categories ul li { border-bottom: 1px dashed black; padding-top: 0.5em; }
+#categories ul li a { font-size: 1em; font-weight: bold; text-decoration: none; color: #980905; font-family: arial, serif; }
+#categories ul li a:hover { color: #fff; background-color: #000; }
 
-/* line 107, sass/screen.sass */
-#content {
-  width: 77.143%;
-  display: inline;
-  float: left;
-  margin-right: 2.857%;
-  margin-left: 1.429%; }
+#content { width: 77.143%; display: inline; float: left; margin-right: 2.857%; margin-left: 1.429%; }
 
-/* line 110, sass/screen.sass */
-#footer {
-  clear: both;
-  margin-right: 1.429%;
-  margin-left: 1.429%;
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 97.143%;
-  display: inline;
-  float: left;
-  margin-right: 2.857%;
-  background-color: #333; }
-  /* line 115, sass/screen.sass */
-  #footer ul {
-    list-style-type: square;
-    color: white; }
-  /* line 118, sass/screen.sass */
-  #footer h3 {
-    color: white;
-    font-family: arial, serif;
-    font-weight: bold; }
-  /* line 122, sass/screen.sass */
-  #footer a {
-    color: #fc0; }
+#footer { clear: both; margin-right: 1.429%; margin-left: 1.429%; padding-left: 10%; padding-right: 10%; width: 97.143%; display: inline; float: left; margin-right: 2.857%; background-color: #333; }
+#footer ul { list-style-type: square; color: white; }
+#footer h3 { color: white; font-family: arial, serif; font-weight: bold; }
+#footer a { color: #fc0; }
 
-/* line 124, sass/screen.sass */
-#delicious {
-  width: 27.143%;
-  display: inline;
-  float: left;
-  margin-right: 2.857%;
-  margin-left: 1.429%; }
+#delicious { width: 27.143%; display: inline; float: left; margin-right: 2.857%; }
 
-/* line 127, sass/screen.sass */
-#twitter {
-  width: 27.143%;
-  display: inline;
-  float: left;
-  margin-right: 2.857%; }
+#twitter { width: 27.143%; display: inline; float: left; margin-right: 2.857%; }
 
-/* line 129, sass/screen.sass */
-#github {
-  width: 17.143%;
-  display: inline;
-  float: left;
-  margin-right: 2.857%;
-  display: inline;
-  float: right;
-  margin-right: 1.429%;
-  /* ugly hacks for IE6-7 */
-  #margin-right: 0.429%;
-  /* end ugly hacks */ }
+#github { width: 17.143%; display: inline; float: left; margin-right: 2.857%; }
 
-/* line 133, sass/screen.sass */
-.date {
-  zoom: 1;
-  display: inline;
-  display: -moz-inline-box;
-  display: inline-block;
-  vertical-align: top;
-  /* Mozilla (FireFox, Camino) */
-  -moz-border-radius: 5px;
-  /* Webkit (Safari, Chrome) */
-  -webkit-border-radius: 5px;
-  /* CSS3 */
-  border-radius: 5px;
-  border: 1px solid black; }
-  /* line 137, sass/screen.sass */
-  .date .day {
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-    padding: 0 5px; }
-  /* line 139, sass/screen.sass */
-  .date .month {
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-    padding: 0 5px;
-    background-color: #C52F24;
-    color: white; }
+.date { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; /* Mozilla (FireFox, Camino) */ -moz-border-radius: 5px; /* Webkit (Safari, Chrome) */ -webkit-border-radius: 5px; /* CSS3 */ border-radius: 5px; border: 1px solid black; }
+.date .day { display: block; text-align: center; font-size: 1em; font-weight: bold; padding: 0 5px; }
+.date .month { display: block; text-align: center; font-size: 1em; font-weight: bold; padding: 0 5px; background-color: #C52F24; color: white; }
 
-/* line 143, sass/screen.sass */
-h2.title {
-  zoom: 1;
-  display: inline;
-  display: -moz-inline-box;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 7px; }
+h2.title { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; margin-top: 7px; }
 
-/* line 147, sass/screen.sass */
-#older-posts h4 {
-  zoom: 1;
-  display: inline;
-  display: -moz-inline-box;
-  display: inline-block;
-  vertical-align: top; }
+#older-posts h4 { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; }
 
-/* line 149, sass/screen.sass */
-#older-posts h3 {
-  border-top: 2px solid black;
-  margin-top: 10px; }
+#older-posts h3 { border-top: 2px solid black; margin-top: 10px; }
 
-/* line 8, ../../../../../.gem/ruby-enterprise/1.8/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.sass */
-#older-posts ul li {
-  list-style-type: none;
-  margin-left: 0px; }
-/* line 155, sass/screen.sass */
-#older-posts ul li {
-  margin-top: 5px; }
+#older-posts ul li { list-style-type: none; margin-left: 0px; }
+#older-posts ul li { margin-top: 5px; }
 
-/* line 158, sass/screen.sass */
-#comments {
-  border-top: 2px solid black;
-  padding-top: 1em; }
+#comments { border-top: 2px solid black; padding-top: 1em; }
 
-/* line 161, sass/screen.sass */
-.comments_count {
-  text-align: center; }
+.comments_count { text-align: center; }
