@@ -129,9 +129,13 @@ body
   +columns(2)
 
 .date
-  +inline-block
+  //+inline-block
+  :width 3em
   +border-radius("5px")
   :border 1px solid black
+  :float left
+  :margin-right 10px
+
   .day
     +date-element
   .month
@@ -139,8 +143,10 @@ body
     :background-color #C52F24
     :color white
 h2.title
-  +inline-block
+  //+inline-block
+  :display inline
   :margin-top 7px
+  :line-height 1.1em
 
 #older-posts h4
   +inline-block
@@ -158,3 +164,4 @@ h2.title
   :padding-top 1em
 .comments_count
   :text-align center
+  :padding 1em 0

@@ -134,11 +134,11 @@ body { text-align: center; font-size: 87.5%; line-height: 1.5em; font-family: "l
 
 #github { width: 17.143%; display: inline; float: left; margin-right: 2.857%; }
 
-.date { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; /* Mozilla (FireFox, Camino) */ -moz-border-radius: 5px; /* Webkit (Safari, Chrome) */ -webkit-border-radius: 5px; /* CSS3 */ border-radius: 5px; border: 1px solid black; }
+.date { width: 3em; /* Mozilla (FireFox, Camino) */ -moz-border-radius: 5px; /* Webkit (Safari, Chrome) */ -webkit-border-radius: 5px; /* CSS3 */ border-radius: 5px; border: 1px solid black; float: left; margin-right: 10px; }
 .date .day { display: block; text-align: center; font-size: 1em; font-weight: bold; padding: 0 5px; }
 .date .month { display: block; text-align: center; font-size: 1em; font-weight: bold; padding: 0 5px; background-color: #C52F24; color: white; }
 
-h2.title { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; margin-top: 7px; }
+h2.title { display: inline; margin-top: 7px; line-height: 1.1em; }
 
 #older-posts h4 { zoom: 1; display: inline; display: -moz-inline-box; display: inline-block; vertical-align: top; }
 
@@ -149,4 +149,4 @@ h2.title { zoom: 1; display: inline; display: -moz-inline-box; display: inline-b
 
 #comments { border-top: 2px solid black; padding-top: 1em; }
 
-.comments_count { text-align: center; }
+.comments_count { text-align: center; padding: 1em 0; }
