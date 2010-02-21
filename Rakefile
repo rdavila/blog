@@ -8,4 +8,4 @@ require 'rake/testtask'
 require 'rake/rdoctask'
 
 require 'tasks/rails'
-require 'thinking_sphinx/tasks'
+require 'thinking_sphinx/tasks' if `gem q -l -n thinking-sphinx`.present?
