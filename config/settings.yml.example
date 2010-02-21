@@ -22,3 +22,5 @@ development:
     <<: *delicious
   :twitter:
     <<: *twitter
+  :disqus:
+    :counter: id_of_disqus_counter_element
