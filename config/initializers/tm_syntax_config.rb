@@ -17,4 +17,5 @@
 #twilight
 #zenburnesque
 
-TmSyntaxHighlighting.defaults = {:theme => "espresso_libre", :line_numbers => false, :lang => "ruby"}
+#TmSyntaxHighlighting.defaults = {:theme => "espresso_libre", :line_numbers => false, :lang => "ruby"}
+TmSyntaxHighlighting.defaults = {:theme => "blackboard", :line_numbers => false, :lang => "ruby"}
