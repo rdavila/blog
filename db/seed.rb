@@ -20,9 +20,9 @@ FakePost.all.each do |post|
     :title => post.title,
     :active => post.active,
     :body => post.body,
-    :body => post.body_html,
+    :body_html => post.body_html,
     :excerpt => post.excerpt,
-    :excerpt => post.excerpt_html,
+    :excerpt_html => post.excerpt_html,
     :created_at => post.created_at,
     :published_at => post.created_at,
     :updated_at => post.updated_at
