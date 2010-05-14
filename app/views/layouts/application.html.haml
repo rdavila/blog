@@ -9,7 +9,7 @@
 
   /[if IE]
     = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
-  %title Rubén On Rails
+  %title= yield(:title) || "Rubén on Rails"
 
 %body
   #container
